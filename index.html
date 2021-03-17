@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- TITLE -->
+    <div class="container w-50 text-center mt-1 d-flex flex-column">
+        <h2 class='mb-3'>Generate Random User Card</h2>
+        <input class="form-control mb-3" type="number" placeholder="Number of Cards to Generate" />
+        <button id="generate" class="btn btn-success text-white px-5 ">Generate</button>
+    </div>
+
+
+
+    <!-- CARDS -->
+    <div class="container p-4">
+        <div class="row">
+
+            <!-- GENERATED HTML-->
+            <!-- COL DIV -->
+            <div class='col-12 col-sm-6 col-md-4'>
+
+                <!-- DELETE BUTTON -->
+                <button id='btn-delete' class='btn btn-danger w-100'>Delete</button>
+
+                <!--  CARD DIV -->
+                <div class='card my-1 p-2'>
+                    <!-- USER IMG -->
+                    <img class='card-img-top' alt='user' src="img/user.jpg">
+                    <!-- <img class='card-img-top' alt='user' src=" + data[i].picture.medium + "> -->
+
+                    <!-- CARD BODY -->
+                    <div class='card-body'>
+                        <!-- USER FIRST & LAST NAME -->
+                        <h5 class="card-title">Name</h5>
+                        <!-- USER ADDRESS -->
+                        <p class="card-text">Some quick example text.</p>
+                        <!-- EMAIL BUTTON -->
+                        <button class='btn btn-primary'>Email</button>
+
+                        <!-- CLOSING DIVS -->
+                    </div>
+
+                </div>
+            </div>
+            <!-- GENERATED HTML ENDS-->
+
+        </div>
+    </div>
+</body>
+
+</html>
