@@ -1,5 +1,5 @@
-# DEPLOYED: 
-# https://zaurinvictus.github.io/api-ajax/.
+## DEPLOYED: 
+## https://zaurinvictus.github.io/api-ajax/.
 
 
 
