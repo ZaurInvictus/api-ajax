@@ -8,3 +8,5 @@
  https://randomuser.me/
 
 
+HOSTED
+https://zaurinvictus.github.io/api-ajax/
