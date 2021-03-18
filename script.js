@@ -1,22 +1,19 @@
 $(document).ready(function () {
-  // ADD CARDS
+
   $("#generate").click(function () {
     // GET INPUT VALUE
     var number = $("input").val();
-    $("input").val(""); // Clear the form
+    $("input").val(""); // Clears the form
 
     // API CALL
     // AJAX LOADS DATA WITHOUT REFRESHING BROWSER
     $.ajax({
       url: `https://randomuser.me/api/?results=${number}`,
       dataType: "json",
-      // type: 'GET', // Optional
       success: function (res) {
-        const data = res.results;
-        console.log(data);
-        // $('.row').append('Append Data to the UI')
+        const data = res.results
 
-        var html_str = "";
+        var html_str = ""
 
         // LOOP OVER USER DATA
         for (var i = 0; i < data.length; i++) {
@@ -41,22 +38,15 @@ $(document).ready(function () {
           </div>`
         }
 
-        // $(".row").html(html_str)
         // APPEND CARD TO THE PAGE
-        // console.log(html_str)
-        $(".row").append(html_str);
-      },
-    });
-  });
+        $(".row").append(html_str)
+      }
+    })
+  })
 
   // REMOVE CARDS ON BUTTON CLICK
   $(document).on("click", "#btn-delete", function () {
-    // console.log( $(this).parent())
-    $(this).parent().remove();
-  });
+    $(this).parent().remove()
+  })
 
-  // REMOVE CARDS ON CLICK ON CARDS
-  // $(document).on("click", ".col", function () {
-  //     $(this).remove();
-  // })
-});
+})
