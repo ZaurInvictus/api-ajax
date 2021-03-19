@@ -17,7 +17,7 @@ $(document).ready(function () {
 
         // LOOP OVER USER DATA
         for (var i = 0; i < data.length; i++) {
-          // console.log('data[i]', data[i])
+      
           html_str += `<div class='col-12 col-sm-6 col-md-4'>
           <button id='btn-delete' class='btn btn-danger w-100'>Delete</button>
           <div class='card my-1 p-2'>
@@ -28,9 +28,8 @@ $(document).ready(function () {
                    ${data[i].name.last}
                   </h5>
                   <p class="card-text">
-                    ${data[i].location.city}
-                    ${data[i].location.street.number}
-                    ${data[i].location.street.name}
+                    ${data[i].location.city},
+                    ${data[i].location.country}
                   </p>
                   <button class='btn btn-primary'>Email</button>
               </div>
